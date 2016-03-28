@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>BBC News - Technology</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -10,25 +11,36 @@
 		<div id="wrapper">
 			<header>
 				<nav id="main-nav">
-					<img src="" alt="BBC logo">
+					<img id="bbc-logo" src="images/bbc-logo.png" alt="BBC logo">
 					<div id="sign-in">
-						<img src="" alt="sign-in icon">
+						<img src="images/sign-in-icon.png" alt="sign-in icon">
 						<p>Sign in</p>
 					</div>
 					<div class="main-nav-options">
 						<ul>
-							<li class="main-nav-options-item"><img src="" alt="Bell"></li>
+							<li class="main-nav-options-item"><img src="images/bell-icon.png" alt="Bell"></li>
 							<li class="main-nav-options-item">News</li>
-							<li class="main-nav-options-item">News</li>
-							<li class="main-nav-options-item">News</li>
-							<li class="main-nav-options-item">News</li>
-							<li class="main-nav-options-item">News</li>
+							<li class="main-nav-options-item">Sport</li>
+							<li class="main-nav-options-item">Weather</li>
+							<li class="main-nav-options-item">iPlayer</li>
+							<li class="main-nav-options-item">TV</li>
+							<li class="main-nav-options-item">Radio</li>
+							<li class="main-nav-options-item">More<img src="images/down-arrow-icon.png" width="10px" alt="more options icon"></li>
 						</ul>
-						<input type="text" placeholder="Search">
+						<div>
+							<input id="main-nav-search" type="text" placeholder="Search">
+							<img src="images/search-icon.png" alt="search">
+						</div>
 					</div>
 				</nav>
 				<div id="news-section-header">
-					<div id="news-section-title"></div>
+					<div id="news-section-title">
+						<h1>NEWS</h1>
+						<div id="local-news">
+							<a href="http://www.bbc.co.uk/news/technology">Find local news</a>
+							<img src="images/local-news-pin-icon.png" alt="Pin icon">
+						</div>
+					</div>
 					<nav id="news-section-nav"></nav>
 				</div>
 			</header>
