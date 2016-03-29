@@ -138,7 +138,6 @@ div#news-section-title {
 	padding: 7px 0px;
 	height: 57px;
 	color: #fff;
-	
 }
 
 div#news-section-title h1 {
@@ -190,6 +189,10 @@ div#main-news-wrapper h3 u {
     border-bottom: 3px solid #BB1919;
 }
 
+article#top-story {
+	height: 300px;
+}
+
 article#top-story h1 {
 	font-size: 1.95em;
 	font-weight: bold;
@@ -200,9 +203,10 @@ article#top-story h1 {
 
 article#top-story img {
 	float: right;
-	width: 397px;
+	width: 400px;
 	height: 223px;
 	padding-left: 15px;
+
 }
 
 article#top-story p {
@@ -218,7 +222,7 @@ p.article-date {
 }
 
 p.article-date span {
-	color: #BB1919;
+	color: #BB1919 !important;
 }
 
 svg#red-line {
@@ -243,8 +247,13 @@ div#more-top-stories {
 	border-top: solid 1px #DBDBDB;
 	display: block;
 }
-article.other-story {
+
+#column-stories {
 	display: inline-block;
+}
+
+article.other-story {
+	display: inline-block !important;
 }
 
 article.other-story img {
@@ -273,15 +282,28 @@ aside#watch-listen h2 {
 	padding-bottom: 20px;
 }
 
-article.featured-video img {
-	float: left;
-
+article.featured-video {
+	display: block;
+	height: 90px;
 }
 
-article.featured-video h5, article.featured-video p {
-	float: right;
-	padding-left: 10px;
-	font-size: 0.8em;
-	color: #404040;
+img.video-thumbnail {
+	display: inline;
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
 
+article.featured-video h5 {
+	padding-top: 4px;
+	font-family: 'Arial', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #404040;
+}
+
+article.featured-video p {
+	display: block;
+	color: #5A5A5A;
+	line-height: 1.3em;
 }
