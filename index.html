@@ -18,17 +18,17 @@
 					</div>
 					<div class="main-nav-options">
 						<ul>
-							<li class="main-nav-options-item"><img src="images/bell-icon.png" alt="Bell"></li>
+							<li class="main-nav-options-item"><img id="bell" src="images/bell-icon.png" alt="Bell"></li>
 							<li class="main-nav-options-item">News</li>
 							<li class="main-nav-options-item">Sport</li>
 							<li class="main-nav-options-item">Weather</li>
 							<li class="main-nav-options-item">iPlayer</li>
 							<li class="main-nav-options-item">TV</li>
 							<li class="main-nav-options-item">Radio</li>
-							<li class="main-nav-options-item">More<img src="images/down-arrow-icon.png" width="10px" alt="more options icon"></li>
+							<li class="main-nav-options-item">More<img id="down-arrow" src="images/down-arrow-icon.png" width="10px" alt="more options icon"></li>
 						</ul>
-						<div>
-							<input id="main-nav-search" type="text" placeholder="Search">
+						<div id="main-nav-search">
+							<input type="text" placeholder="Search">
 							<img src="images/search-icon.png" alt="search">
 						</div>
 					</div>
@@ -41,67 +41,92 @@
 							<img src="images/local-news-pin-icon.png" alt="Pin icon">
 						</div>
 					</div>
-					<nav id="news-section-nav"></nav>
+					<nav id="news-section-nav">
+						<ul>
+							<a href="http://www.bbc.co.uk/news"><li class="news-section-nav-item">Home</li></a>
+							<li class="news-section-nav-item">UK</li>
+							<li class="news-section-nav-item">World</li>
+							<li class="news-section-nav-item">Business</li>
+							<li class="news-section-nav-item">Politics</li>
+							<li class="news-section-nav-item">Tech</li>
+							<li class="news-section-nav-item">Science</li>
+							<li class="news-section-nav-item">Health</li>
+							<li class="news-section-nav-item">Education</li>
+							<li class="news-section-nav-item">Entertainment & Arts</li>
+							<li class="news-section-nav-item">Video & Audio</li>
+							<li class="news-section-nav-item">More</li>
+						</ul>
+					</nav>
 				</div>
 			</header>
-			<main>
-				<h3>Technology</h3>
-				<article id="top-story">
-					<h1>FBI warns on risks of car hacking</h1>
-					<img src="http://ichef-1.bbci.co.uk/news/660/cpsprodpb/6EC9/production/_84416382_f092e87f-5250-4426-8a04-fea430d8f65c.jpg" alt="car-technology">
-					<p>The FBI issues a public bulletin laying out the risks of car hacking and suggests ways the public can protect their vehicles.</p>
-					<p class="article-date">18 May 2016 | Technology</p>
-				<a href="http://www.bbc.co.uk/news/technology">Link to related article</a>
-				<a href="http://www.bbc.co.uk/news/technology">Link to related article</a>
-				</article>
-				<div id="more-top-stories">
-					<article class="other-story">1st column story</article>
-						<img src="http://ichef.bbci.co.uk/news/976/cpsprodpb/10177/production/_88811956_trump_crowd_g_976.jpg" alt="Trump">
-						<h5>Title</h5>
-						<p>Synopsis text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur vero sed est quisquam ex placeat, neque quasi iure obcaecati suscipit fugiat soluta asperiores? </p>
-					<article class="other-story">2nd column story</article>
-						<img src="http://ichef-1.bbci.co.uk/news/660/cpsprodpb/8F41/production/_88837663_gettyimages-456307682.jpg" alt="Xbox">
-						<h5>Title</h5>
-						<p>Synopsis text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur vero sed est quisquam ex placeat, neque quasi iure obcaecati suscipit fugiat soluta asperiores? </p>
-					<aside class="more-stories">
-						<article class="other-headline">
-							<h5>Other headline</h5>
-							<p class="article-date">18 May 2016 | Technology</p>
+			<div id="content-wrapper">
+				<main>
+					<div id="main-news-wrapper">
+						<h3><u>Technology</u></h3>
+						<article id="top-story">
+							<h1>Cracked iPhone: Should you be worried?</h1>
+							<img src="images/top-story.png" alt="iPhone">
+							<p>What are the implications of the announcement that the FBI managed to get data off a password-protected iPhone without Apple's help?</p>
+							<p class="article-date">29 March 2016 | <span>Technology</span></p>
+							<svg id="red-line" height="1" width="40">
+  								<line x1="0" y1="0" x2="40" y2="0" style="stroke:rgb(187, 25, 25);stroke-width:2" />
+							</svg>
+							<a class="related-article-link" href="http://www.bbc.co.uk/news/world-us-canada-35914195">FBI breaks into dead gunman's iPhone</a>
 						</article>
-						<article class="other-headline">
-							<h5>Other headline</h5>
-							<p class="article-date">18 May 2016 | Technology</p>
-						</article>
-						<article class="other-headline">
-							<h5>Other headline</h5>
-							<p class="article-date">18 May 2016 | Technology</p>
-						</article>
-					</aside>
-				</div>
-			</main>
-			<aside id="watch-listen">
-				<h2>Watch/Listen</h2>
-				<video class="featured-video">
-					<iframe src="" frameborder="0"></iframe>
-					<h5>Video title</h5>
-					<p class="article-date">18 May 2016 | Technology</p>
-				</video>
-				<video class="featured-video">
-					<iframe src="" frameborder="0"></iframe>
-					<h5>Video title</h5>
-					<p class="article-date">18 May 2016 | Technology</p>
-				</video>
-				<video class="featured-video">
-					<iframe src="" frameborder="0"></iframe>
-					<h5>Video title</h5>
-					<p class="article-date">16 May 2016 | Technology</p>
-				</video>
-				<video class="featured-video">
-					<iframe src="" frameborder="0"></iframe>
-					<h5>Video title</h5>
-					<p class="article-date">15 May 2016 | Technology</p>
-				</video>
-			</aside>
+						<div id="more-top-stories">
+							<div id="column-stories">
+								<article class="other-story">
+									<img src="http://ichef.bbci.co.uk/news/976/cpsprodpb/10177/production/_88811956_trump_crowd_g_976.jpg" alt="Trump">
+									<h5>Title</h5>
+									<p>Synopsis text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur vero sed est quisquam ex placeat, neque quasi iure obcaecati suscipit fugiat soluta asperiores? </p>
+								</article>
+								<article class="other-story">
+									<img src="http://ichef-1.bbci.co.uk/news/660/cpsprodpb/8F41/production/_88837663_gettyimages-456307682.jpg" alt="Xbox">
+									<h5>Title</h5>
+									<p>Synopsis text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tenetur vero sed est quisquam ex placeat, neque quasi iure obcaecati suscipit fugiat soluta asperiores? </p>
+								</article>
+							</div>
+							<aside id="more-stories">
+								<article class="other-headline">
+									<h5>Other headline</h5>
+									<p class="article-date">18 May 2016 | Technology</p>
+								</article>
+								<article class="other-headline">
+									<h5>Other headline</h5>
+									<p class="article-date">18 May 2016 | Technology</p>
+								</article>
+								<article class="other-headline">
+									<h5>Other headline</h5>
+									<p class="article-date">18 May 2016 | Technology</p>
+								</article>
+							</aside>
+						</div>
+					</div>
+				</main>
+				<aside id="watch-listen">
+					<h2>Watch/Listen</h2>
+					<article class="featured-video">
+						<img src="images/video-thumbnail-1.png" alt="screenshot of video">
+						<h5>Video title</h5>
+						<p class="article-date">18 May 2016 | Technology</p>
+					</article>
+					<article class="featured-video">
+						<img src="images/video-thumbnail-1.png" alt="screenshot of video">
+						<h5>Video title</h5>
+						<p class="article-date">18 May 2016 | Technology</p>
+					</article>
+					<article class="featured-video">
+						<img src="images/video-thumbnail-1.png" alt="screenshot of video">
+						<h5>Video title</h5>
+						<p class="article-date">18 May 2016 | Technology</p>
+					</article>
+					<article class="featured-video">
+						<img src="images/video-thumbnail-1.png" alt="screenshot of video">
+						<h5>Video title</h5>
+						<p class="article-date">18 May 2016 | Technology</p>
+					</article>
+				</aside>
+			</div>
 		</div>
 	</body>
 </html>
