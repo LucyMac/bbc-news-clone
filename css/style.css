@@ -18,72 +18,63 @@ nav li, nav div, nav img, .main-nav-options ul,  #main-nav-search {
 	font-weight: bold;
 	font-size: 0.8em;
 	max-width: 978px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
-#bbc-logo {
+img#bbc-logo {
 	width: 85px;
 	padding-bottom: 5px;
 	position: relative;
 	top: -2px;
 }
 
-#sign-in {
+div#sign-in {
 	margin: 0px 70px 0px 5px;
+	padding: 10px 0px 0px 10px;
 	border-left: solid 1px #E4E4E4;
-	padding-left: 10px;
 }
 
-#sign-in img {
+div#sign-in img {
 	float: left;
 	padding-bottom: 10px;
 }
 
-#sign-in p {
-	float: right;
+div#sign-in p {
+	float: left;
 	padding: 5px 0px 0px 5px;
 }
 
-#main-nav li {
-	padding: 10px;
+div.main-nav-options {
+	padding-top: 0px;
 }
 
-.main-nav-options {
-	padding: 0;
-}
-
-.main-nav-options ul {
+div.main-nav-options ul {
 	float: left;
-	margin-top: 0px;
 }
 
-.main-nav-options div {
-	float: right;
-	margin: 15px 0px 0px 0px;
+li.main-nav-options-item {
+	padding: 10px 10px 10px 10px;
+	border-left: solid 1px #E4E4E4;
 }
 
-#bell {
+img#bell {
 	position: relative;
 	top: 5px;
 }
 
-.main-nav-options-item {
-	border-left: solid 1px #E4E4E4;
-}
-
-#down-arrow {
+img#down-arrow {
 	margin-left: 30px;
 }
 
-#main-nav-search {
-	float: right;
+div#main-nav-search {
+	float: left;
+	margin: 15px 0px 0px 0px;
 	position: relative;
 	left: 31px;
 	bottom: 4px;
 }
 
-#main-nav-search, input {
+div#main-nav-search, input {
 	background-color: #E4E4E4;
 	outline: none;
 	border: solid 1px #E4E4E4;
@@ -91,7 +82,7 @@ nav li, nav div, nav img, .main-nav-options ul,  #main-nav-search {
 	color: black;
 }
 
-#main-nav-search img {
+div#main-nav-search img {
 	margin: 2px 2px -4px 0px;
 }
 
@@ -172,12 +163,12 @@ div#local-news a {
 
 /*Main news*/
 
-div#main-news-wrapper {
+div#main-news-wrapper { 
 	width: 65%;
 	float: left;
 }
 
-div#main-news-wrapper h3 {
+div#main-news-wrapper h3 {  /*section title: Technology*/
 	padding-top: 10px;
 	margin-bottom: 20px;
 	font-size: 1.25em;
@@ -216,12 +207,21 @@ article#top-story p {
 	color: #5A5A5A;
 }
 
-p.article-date {
-	padding: 10px 0px;
+.article-date {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 0.8em !important;
+	line-height: 20px;
+	color: #5A5A5A;
 }
 
-p.article-date span {
+.article-date img {
+	padding-right: 4px;
+	position: relative;
+	bottom: -2px;
+}
+
+.article-date span {
 	color: #BB1919 !important;
 }
 
@@ -232,8 +232,9 @@ svg#red-line {
 
 a.related-article-link {
 	font-size: 0.9em;
-	color: #5A5A5A;
+	color: #000;
 	text-decoration: none;
+	padding-bottom: 15px;
 }
 
 a.related-article-link:hover {
@@ -242,29 +243,66 @@ a.related-article-link:hover {
 
 /*Other stories below top story*/
 
-div#more-top-stories {
-	padding-top: 10px;
+div#more-top-stories {   /*wraps section below top story*/
+	padding-top: 15px;
 	border-top: solid 1px #DBDBDB;
+	position: relative;
 	display: block;
 }
 
-#column-stories {
-	display: inline-block;
+div#column-stories {    /*wraps 2 column stories within more-top-stories*/
+	float: left;
+	width: 72%;
 }
 
 article.other-story {
-	display: inline-block !important;
+	float: left;
+	width: 46.5%;
+	padding: 0px 15px 8px 0px;
+	margin-left: 0;
+	margin-right: 15px;
+	border-right: solid 1px #DBDBDB;
 }
 
 article.other-story img {
-	width: 215px;
-	height: 121px;
+	width: 100%;
+	padding-bottom: 4px;
 }
 
+article.other-story h5 {
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding-bottom: 8px;
+}
 
+article.other-story p {
+	font-size: 0.9em;
+	line-height: 1.25em;
+	color: #5A5A5A;
+}
 
+aside#more-stories {
+	float: left;
+	width: 26%;
+}
 
+article.other-headline {
+	margin-bottom: 8px;
+	border-bottom: solid 1px #DBDBDB;
+}
 
+article.other-headline:last-of-type {
+	border-bottom: none;
+}
+
+article.other-headline h5 {
+	font-size: 1.1em;
+	font-weight: bold;
+	line-height: 1.1em;
+}
+
+/*right-hand video section*/
 
 aside#watch-listen {
 	width: 30%;
@@ -274,24 +312,25 @@ aside#watch-listen {
 	border-left: 1px solid #DBDBDB;
 	position: relative;
 	top: 70px;
+	height: 640px;
 }
 
 aside#watch-listen h2 {
-	font-size: 1.4em;
+	font-size: 1.47em;
 	color: #404040;
 	padding-bottom: 20px;
 }
 
 article.featured-video {
 	display: block;
-	height: 90px;
+	height: 93px;
+	width: 300px;
+	position: relative;
 }
 
 img.video-thumbnail {
-	display: inline;
 	float: left;
 	padding-right: 10px;
-	padding-bottom: 10px;
 }
 
 article.featured-video h5 {
@@ -302,8 +341,8 @@ article.featured-video h5 {
 	color: #404040;
 }
 
-article.featured-video p {
+/*article.featured-video p {
 	display: block;
 	color: #5A5A5A;
 	line-height: 1.3em;
-}
+}*/
